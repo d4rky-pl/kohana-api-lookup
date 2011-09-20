@@ -147,6 +147,19 @@ h1 span
 	margin: 20px 0;
 }
 
+#api .class dd p:before
+{
+	color: #8c6cb0;
+	content: '▶';
+	float: left;
+	margin-right: 10px;
+}
+
+#api .class dd
+{
+	margin: 6px 0;
+}
+
 /*
  * End of styling
  */
