@@ -1,0 +1,48 @@
+html { background: #000 url('http://michal.matyas.pl/f/g/b1.jpg') 50% 50% no-repeat; }
+body { font-family: "Helvetica", "Tahoma", "Liberation Sans", sans-serif; font-size: 12px; line-height: 2em; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: auto; }
+
+#box { width: 700px; padding: 20px; margin: 30px auto; background: white; }
+#form { width: 700px; position: relative; }
+.as-selections { width: 580px; }
+button { width: 100px; height: 30px; position: absolute !important; right: 0; top: 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Kohana API styling */
+#api h3 
+{ 
+	font-size: 22px;
+	border-bottom: 1px solid #31194d;
+	padding: 4px 0;
+}
+
+#api h3 small
+{
+	color: #bbb;
+}
+
+#api h3 a
+{
+	border-bottom: 0;
+}
+
+#api a
+{
+	color: #8555ba;
+	border-bottom: 1px solid #31194d;
+	text-decoration: none;
+}
+
+#api h4
+{
+	font-size: 16px;
+	background: #8c6cb0;
+	color: white;
+	margin: 0 -5px;
+	padding: 0 5px;
+}
+
+#api pre
+{
+	overflow: auto;
+}
