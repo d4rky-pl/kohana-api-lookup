@@ -116,3 +116,19 @@ h1 span
 {
 	overflow: auto;
 }
+
+/*
+ * End of styling
+ */
+
+.footer
+{
+	text-align: center;
+	color: white;
+}
+
+.footer a
+{
+	color: #e8c3ff;
+	text-decoration: none;
+}
