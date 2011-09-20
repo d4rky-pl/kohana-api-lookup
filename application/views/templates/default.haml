@@ -1,0 +1,22 @@
+!!!
+%html
+	%head
+		%meta(charset = "utf-8")
+		%title Kohana 3.x Lookup #{(!empty($title) ? '- '.$title : '')}
+
+		%link(type = "text/css" rel="stylesheet" href="#{url::base()}assets/reset.css")
+		%link(type = "text/css" rel="stylesheet" href="#{url::base()}assets/gh-buttons.css")
+		%link(type = "text/css" rel="stylesheet" href="#{url::base()}assets/jquery-ui/jquery-ui.css")
+		%link(type = "text/css" rel="stylesheet" href="#{url::base()}assets/style.css")
+
+		%script(type = "text/javascript" src="#{url::base()}assets/jquery.js")
+		%script(type = "text/javascript" src="#{url::base()}assets/jquery-ui/js/jquery-ui.js")
+		%script(type = "text/javascript" src="#{url::base()}assets/core.js")
+
+	%body
+
+		%h1
+			%a(href = "http://kohanaframework.org") Kohana Framework 3.x
+			%span API Lookup
+
+		= $content

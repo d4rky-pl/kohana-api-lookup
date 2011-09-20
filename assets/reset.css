@@ -1,0 +1,106 @@
+/*
+ * Custom reset.css based on Meyer's and HTML5
+ * @author Michał Matyas <michal@matyas.pl>
+ * @license MIT License
+ * Copyright (C) 2011
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, 
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+article, aside, dialog, figure, footer, header, 
+hgroup, nav, section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+h1, h2, h3, h4, h5, h6,
+em, strong, i, b, address, cite, q, dfn, th, a {
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: none; 
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+th, td {
+  vertical-align: top;
+  text-align: left;
+}
+
+button, input, select, option, textarea {
+	font: inherit;
+}
+
+input::-moz-focus-inner {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 
+ * Firefox outline bug fix. 
+ * You may need to override it in very specific situations 
+ */
+a:focus {
+	overflow: hidden;
+}

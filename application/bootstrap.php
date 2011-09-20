@@ -53,7 +53,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Set the default language
  */
-I18n::lang('en-us');
+I18n::lang('pl-pl');
 
 /**
  * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
@@ -80,7 +80,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/kohana-api/',
+	'base_url'   => '/api/',
 	'index_file' => '',
 ));
 
@@ -101,15 +101,24 @@ Kohana::modules(array(
 	'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	'database'   => MODPATH.'database',   // Database access
 	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	'curl'       => MODPATH.'curl',       // Curl support
+	'haml'       => MODPATH.'haml',       // Haml language module
 	));
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('default', '(<controller>(/<action>(/<id>)))')
+Route::set('cli', 'cli/(<controller>(/<action>(/<id>)))')
 	->defaults(array(
+		'directory'  => 'cli',
 		'controller' => 'default',
+		'action'     => 'index',
+	));
+
+Route::set('default', '(<action>(/<id>))')
+	->defaults(array(
+		'controller' => 'main',
 		'action'     => 'index',
 	));

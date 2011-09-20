@@ -1,0 +1,13 @@
+.box.search
+	%form(method = "get")
+		%input#query(type = "text", name = "query", :value = "#{!empty($_GET['query']) ? html::chars($_GET['query']) : ''}")
+				
+		%button.button.pill.icon.search(type = "submit") Search
+
+- if(!empty($active_class))
+
+	#api= Haml::Factory('fragments/main/class', array('class' => $active_class))
+
+- elseif(!empty($active_method))
+
+	#api= Haml::Factory('fragments/main/method', array('method' => $active_method))

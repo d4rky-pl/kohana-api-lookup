@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Installation directory
-RewriteBase /kohana-api/
+RewriteBase /api/
 
 # Protect hidden files from being viewed
 <Files .*>

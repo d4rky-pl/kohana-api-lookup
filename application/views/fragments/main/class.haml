@@ -1,0 +1,5 @@
+.box.class
+	#{$class->content}
+
+- foreach($class->methods->find_all() as $method)
+	= Haml::Factory('fragments/main/method', array('method' => $method))

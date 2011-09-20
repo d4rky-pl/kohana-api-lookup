@@ -1,14 +1,84 @@
-html { background: #000 url('http://michal.matyas.pl/f/g/b1.jpg') 50% 50% no-repeat; }
-body { font-family: "Helvetica", "Tahoma", "Liberation Sans", sans-serif; font-size: 12px; line-height: 2em; }
-html, body { height: 100%; margin: 0; padding: 0; overflow: auto; }
+/*
+ * Kohana 3.x API Lookup
+ *
+ */
 
-#box { width: 700px; padding: 20px; margin: 30px auto; background: white; }
-#form { width: 700px; position: relative; }
-.as-selections { width: 580px; }
-button { width: 100px; height: 30px; position: absolute !important; right: 0; top: 5px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html 
+{ 
+	background: #000 url('http://michal.matyas.pl/f/g/b1.jpg') 50% 50% no-repeat fixed; 
+	overflow: auto;
+}
 
+body 
+{ 
+	font-family: "Helvetica", "Tahoma", "Liberation Sans", sans-serif; 
+	font-size: 12px; 
+	line-height: 18px; 
+	max-width: 1200px;
+	min-width: 960px;
+	margin: 0 auto;
+}
 
-/* Kohana API styling */
+html, body 
+{ 
+	min-height: 100%; 
+}
+
+h1
+{
+	position: relative;
+	margin: 20px 0;
+}
+
+h1 a
+{
+	display: block;
+	background: url('kohana.png') 0 0 no-repeat;
+	width: 200px;
+	height: 70px;
+	text-indent: -9999em;
+}
+
+h1 span
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 225px;
+	height: 70px;
+	line-height: 70px;
+	color: white;
+}
+
+.box
+{
+	background: rgba(0,0,0,0.5);
+	color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.search.box input
+{
+	width: 85%;
+}
+
+.search.box button
+{
+	float: right;
+	width: 10%;
+}
+
+#api #loading
+{
+	height: 100px;
+	margin: 20px auto;
+	background: rgba(0,0,0,0.5) url('loader.gif') 50% 50% no-repeat;
+}
+
+/* 
+ * Kohana API (userguide) styling 
+ */
 #api h3 
 { 
 	font-size: 22px;
