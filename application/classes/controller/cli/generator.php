@@ -1,17 +1,13 @@
 <?php class Controller_CLI_Generator extends Base_CLI
 {
 
-	/*
-	 * URL to your server hosting Userguide module
-	 * You *really* want to put your own link in here.
-	 */
-	protected $_base_url    = 'http://kohanaframework.org';
-
-	/*
-	 * API documentation address relative to $_base_url
-	 * You *really* want to put your own link in here.
-	 */
-	protected $_guide_index = '/3.2/guide/api';
+	public function before()
+	{
+		$config = Kohana::$config->load('api_lookup');
+		$this->_base_url = $config['base_url'];
+		$this->_guide_index = $config['guide_index'];
+		return parent::before();
+	}
 
 	public function action_index()
 	{
