@@ -160,6 +160,13 @@ h1 span
 	margin: 6px 0;
 }
 
+/* HACKS */
+.syntaxhighlighter
+{
+	width: 100% !important;
+}
+
+
 /*
  * End of styling
  */
