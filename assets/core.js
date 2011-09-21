@@ -4,7 +4,10 @@ $(function()
 	API_Lookup = {
 
 		'_prepare_api_box': function() {
-			$(".box.search").after('<div id="api"/>');
+			if($("#api").length == 0)
+			{
+				$(".box.search").after('<div id="api"/>');
+			}
 
 			API_Lookup.api_box = $("#api");
 		},
@@ -16,7 +19,6 @@ $(function()
 				select: function (event, ui)
 				{
 					API_Lookup.api_box.html('<div id="loading"/>');
-					console.log(ui.item.value);
 					$.get(location.href, { 'query': ui.item.value }, function(data)
 					{
 						API_Lookup.api_box.html(data); 
