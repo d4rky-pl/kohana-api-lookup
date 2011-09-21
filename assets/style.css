@@ -173,8 +173,28 @@ h1 span
 
 .footer
 {
-	text-align: center;
 	color: white;
+	padding: 0;
+	height: 60px;
+	position: relative;
+}
+
+.footer .left
+{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.footer .right
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 20px;
+	line-height: 20px;
 }
 
 .footer a
