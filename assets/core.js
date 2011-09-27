@@ -21,6 +21,7 @@ $(function()
 					API_Lookup.api_box.html('<div id="loading"/>');
 					$.get(location.href, { 'query': ui.item.value }, function(data)
 					{
+						history.pushState(null, null, [location.protocol, '//', location.host, location.pathname].join('') + "?query=" + encodeURIComponent(ui.item.value));
 						API_Lookup.api_box.html(data); 
 						API_Lookup._prepare_syntax_highlighter();
 					});
