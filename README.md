@@ -1,3 +1,9 @@
+**THIS PROJECT IS NO LONGER MAINTAINED AS I HAVE SWITCHED TO RUBY ON RAILS.**
+
+**OH, AND PLEASE STOP SENDING ME PHP JOB OFFERS, I'M NOT INTERESTED IN COMING BACK.**
+
+---
+
 Kohana 3.x API Lookup
 =====================
 This website has been created to simplify using Kohana's API docs which are the main source of programming knowledge for this fine framework.
